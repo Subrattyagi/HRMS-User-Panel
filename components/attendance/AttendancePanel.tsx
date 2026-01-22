@@ -52,7 +52,7 @@ export default function AttendancePanel() {
 
       const userData = JSON.parse(userDataString);
 
-      const response = await fetch('http://localhost:9000/api/punch-in', {
+      const response = await fetch('https://hrms-backend-eta.vercel.app/api/punch-in', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ export default function AttendancePanel() {
 
       const userData = JSON.parse(userDataString);
 
-      const response = await fetch('http://localhost:9000/api/punch-out', {
+      const response = await fetch('https://hrms-backend-eta.vercel.app/api/punch-out', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

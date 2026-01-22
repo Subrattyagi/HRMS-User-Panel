@@ -31,8 +31,8 @@ export default function LoginPage() {
 
         try {
             const url = isRegistering
-                ? 'http://localhost:9000/api/register'
-                : 'http://localhost:9000/api/login';
+                ? 'https://hrms-backend-eta.vercel.app/api/register'
+                : 'https://hrms-backend-eta.vercel.app/api/login';
 
             const bodyData = isRegistering
                 ? { name, email, password }

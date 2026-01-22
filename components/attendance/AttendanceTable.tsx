@@ -35,7 +35,7 @@ export default function AttendanceTable({ refreshTrigger = 0 }: { refreshTrigger
 
       const userData = JSON.parse(userDataString);
 
-      const response = await fetch(`http://localhost:9000/api/attendance/user/${userData._id}`);
+      const response = await fetch(`https://hrms-backend-eta.vercel.app/api/attendance/user/${userData._id}`);
       const result = await response.json();
 
       if (result.success) {
